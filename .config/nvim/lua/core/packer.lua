@@ -29,8 +29,9 @@ return require('packer').startup(function(use)
 
     end
   })
-
+  use('tpope/vim-commentary')
   use('fatih/vim-go', {run = ':GoUpdateBinaries'})
+  use('rust-lang/rust.vim')
   use('dart-lang/dart-vim-plugin')
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use 'neovim/nvim-lspconfig'
@@ -42,5 +43,7 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
   use 'onsails/lspkind-nvim'
+  use 'jiangmiao/auto-pairs'
 
 end)
+
